@@ -1,15 +1,23 @@
 /* This main css file contains the default rules and is geared toward the small/phone view */
 
-* { box-sizing: border-box;}  /* This wildcard applies to all elements ensuring a box layout model */
+* {
+    box-sizing: border-box;
+}
+
+/* This wildcard applies to all elements ensuring a box layout model */
 
 body {
     font-size: 16px;
     font-family: "Avenir Next LT Pro", Arial, sans-serif;
-  /* Declare the base font-family - from google font api or other */
+    /* Declare the base font-family - from google font api or other */
 }
 
-header, nav, main, footer { /* the comma means apply the following CSS declarations to all of the listed elements */
-  /* Declare the maximum width and other main element rules to limit the stretch on wide views */
+header,
+nav,
+main,
+footer {
+    /* the comma means apply the following CSS declarations to all of the listed elements */
+    /* Declare the maximum width and other main element rules to limit the stretch on wide views */
 }
 
 header {}
@@ -32,64 +40,46 @@ header .subheading {
     font-family: ""
 }
 
-nav {
-    
-}
+nav {}
+
 nav button {}
 
-nav ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    width: 100%;
-    background-color: teal;
-}
-
-nav ul li {
-    text-align: center;
-}
-
-nav ul li a {
-    display: block;
-    color: white;
-    padding: 14px 16px;
-    text-decoration: none;
-}
-
-nav ul li.active a {
-    background-color: grey;
-    color: white;
-}
-
-nav ul li a:hover {
-    background-color: lightcoral;
-    color: white;
-}
-
 main {}
+
 main h2 {
     color: teal;
     font-family: "Avenir Next LT Pro", Arial, sans-serif;
     font-size: 30px;
 }
 
-main figure { margin: 0 0 .2rem 2%; width: 96%; }
+main figure {
+    margin: 0 0 .2rem 2%;
+    width: 96%;
+}
 
-main figure img { width:}
+main figure img {
+    width:
+}
 
 section {}
 
-section.forecast {
+.forecast {
     display: none;
 }
 
-article p.town-article img {  /* This structure refers to img elements that are the posterity of paragraph elements within artcle elements */
-  width: ???; /* fill the page in the small/phone view */
-  margin: ???;
+article p.town-article img {
+    /* This structure refers to img elements that are the posterity of paragraph elements within artcle elements */
+    width: ???;
+    /* fill the page in the small/phone view */
+    margin: ???;
 }
 
 footer {}
+
 footer aside {}
-footer>p {} /* This structure refers to p elements that are direct children of the footer element */
+
+footer > p {}
+
+/* This structure refers to p elements that are direct children of the footer element */
 
 /* Other Class Selectors */

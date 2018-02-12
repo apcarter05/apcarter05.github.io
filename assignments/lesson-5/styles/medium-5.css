@@ -1,68 +1,68 @@
 @media only screen and (min-width: 37.5em) {
-  /* Only CSS rules that need to be changed to meet the layout needs from small to medium go in here */
-
-header, nav, main, footer {
-    max-width: 800px;
-}
-
-header {
+    /* Only CSS rules that need to be changed to meet the layout needs from small to medium go in here */
+    header,
+    nav,
+    main,
+    footer {
+        max-width: 800px;
     }
 
-header h1 {
-        color: teal;
-        font-family: "Avenir Next LT Pro", Arial, sans-serif;
-        font-size: 40px;    
+    header {}
+
+    header h1 {
+        font-size: 40px;
         margin-top: -2.5em;
-        text-align: center;
-    }
-header img {
-        margin: 20px 50px;
-        padding: 0;
-        height: 150px;;
-        width: 200px;
     }
     
-header .subheading {
-        color: dimgrey;
-        text-align: center;
-        font-family: serif;
+    header img {
+        margin: 20px 50px;
+        padding: 0;
+        height: 150px;
+        width: 200px;
+    }
+
+    header .subheading {
         font-size: 25px;
         margin-top: -1em;
         margin-bottom: 1em;
+
+    }
+    nav button {
+        display: none;
+    }
+    /* hamburger button does not need to be shown */
+    nav ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        background-color: teal;
+    }
+    nav ul li {
+        float: left;
+    }
+    nav ul li a {
+        display: block;
+        color: white;
         text-align: center;
-        
+        padding: 14px 16px;
+        text-decoration: none;
     }
-nav button { display:none; }  /* hamburger button does not need to be shown */
-       
-nav ul {
-    background-color: teal;
+    nav ul li.active a {
+        background-color: #555;
+        color: white;
     }
-    
-nav ul li {
-    float: left;
-}
-    
-nav ul li.active a {
-    background-color: grey;
-    color: white;
-}
-
-nav ul li a:hover {
-    background-color: lightcoral;
-    color: white;
-  
-main {
-    clear: both;
-}
-
-main h2 {
-    color: teal;
-    font-family: "Avenir Next LT Pro", Arial, sans-serif;
-    font-size: 30px;
+    nav ul li a:hover {
+        background-color: white;
+        color: teal;
     }
-    
-section.forecast { display: ???; }  /* show the 10-day forecast with the medium view and up */
-  
-  article p.town-article img { width: 62.666%; float:right; }  /* responsive images */
+    .forecast {
+        display: block;
+    }
 
+    /* responsive images */
+    main figure img {
+        width: 340px;
+        height: 220px;
+    }
 }
