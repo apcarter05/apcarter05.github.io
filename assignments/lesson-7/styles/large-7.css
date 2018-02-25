@@ -1,0 +1,30 @@
+@media only screen and (min-width: 64em) {
+    /* Only CSS rules that need to be changed to meet the layout needs from medium to large/wide go in here */
+    header,
+    nav,
+    main,
+    footer {
+        max-width: 150em;
+    }
+    
+    nav ul lia a {padding: .6rem 1rem;}
+
+    main figure img {
+        width: 1200px;
+        height: 250px;
+    }
+
+    article p.town-article img {
+        width: 29.333%;
+    }
+    #gallery img {
+        grid-row-start: 3;
+        grid-row-end: 6;
+    }
+    
+    #gallery img:hover {box-shadow: 5px 5px 10px gray;}
+    
+    #gallery p:hover {box-shadow: 5px 5px 10px gray;}
+    
+
+}
