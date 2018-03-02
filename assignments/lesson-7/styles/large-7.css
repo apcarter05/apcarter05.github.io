@@ -18,13 +18,11 @@
         width: 29.333%;
     }
     #gallery img {
-        grid-row-start: 3;
-        grid-row-end: 6;
+        grid-column-start: 1;
+        grid-column-end: 3;
     }
     
     #gallery img:hover {box-shadow: 5px 5px 10px gray;}
-    
-    #gallery p:hover {box-shadow: 5px 5px 10px gray;}
     
 
 }

@@ -1,0 +1,53 @@
+ table, th, td {
+     border: 1px solid lightgrey;
+     border-collapse: collapse;
+     align-content: center;
+ }
+
+ table {
+     border-spacing: 2px;
+ }
+
+ th,
+ td {
+     padding: 3px;
+     text-align: center;
+ }
+
+ #header,
+ #footer {
+     background-color: #7fb9c2;
+ }
+
+ #subhead,
+ #november {
+     background-color: #628ca6;
+     color: white;
+ }
+
+ #color {
+     background-color: #e7f0ed;
+     font-family: 'Ubuntu', sans-serif;
+ }
+
+ #header {
+     font-size: 25px;
+     text-align: center;
+ }
+
+ #subhead {
+     font-size: 18px;
+ }
+
+ .section {
+     background-color: #e7ffed;
+ }
+
+ #blackfriday {
+     font-style: italic;
+ }
+
+ #footer {
+     font-size: 10px;
+     text-align: center;
+ }
