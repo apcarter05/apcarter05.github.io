@@ -1,0 +1,76 @@
+@media only screen and (min-width: 37.5em) {
+    /* Only CSS rules that need to be changed to meet the layout needs from small to medium go in here */
+    header,
+    nav,
+    main,
+    footer {
+        max-width: 800px;
+    }
+
+    header {}
+
+    header, h1 {
+        font-size: 40px;
+        margin-top: -2.5em;
+    }
+
+    header img {
+        display: flex;
+        margin: .5em 3em;
+        padding: 0;
+        height: 3.5em;
+        width: 6em;
+    }
+
+    header .subheading {
+        font-size: 25px;
+        margin-top: -1em;
+        margin-bottom: 1em;
+
+    }
+    nav button {
+        display: none;
+    }
+    /* hamburger button does not need to be shown */
+    nav ul.hide {
+        display: block;
+    }
+
+    nav ul {
+        list-style-type: none;
+        margin: .25em .25em;
+        padding: .25em;
+        overflow: hidden;
+        background-color: teal;
+    }
+    nav ul li {
+        display: inline-flex;
+        flex-flow: row nowrap;
+    }
+    nav ul li a {
+        border: none;
+        color: white;
+        text-align: center;
+        padding: 1em 3em;
+        text-decoration: none;
+    }
+
+
+    .forecast {
+        display: block;
+    }
+
+    /* responsive images */
+    main figure img {
+        width: 340px;
+        height: 220px;
+    }
+    #gallery img {
+        grid-column-start: 1;
+        grid-column-end: 2;
+    }
+    .info {
+        max-width: 30em;
+        align-items: center;
+    }
+}
