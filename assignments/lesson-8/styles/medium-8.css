@@ -65,12 +65,14 @@
         width: 340px;
         height: 220px;
     }
-    #gallery img {
-        grid-column-start: 1;
-        grid-column-end: 2;
-    }
+    
     .info {
         max-width: 30em;
         align-items: center;
+    }
+    
+    .grid-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
     }
 }
