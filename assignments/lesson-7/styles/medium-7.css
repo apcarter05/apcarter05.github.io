@@ -63,8 +63,9 @@
         width: 340px;
         height: 220px;
     }
-    #gallery img {
-        grid-column-start: 1;
-        grid-column-end: 2;
+    
+   .grid-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
     }
 }

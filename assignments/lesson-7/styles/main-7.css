@@ -122,11 +122,28 @@ footer > p {}
 
 /* Other Class Selectors */
 
-#gallery img {
+.grid-container{
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr;
     grid-gap: 10px;
-    width: auto;
-    height: 200px;
+    background-color: skyblue;
+    padding: 10px;
 }
+
+.grid-item {
+    background-color:aliceblue;
+    border: 1px solid black;
+    padding: 5px;
+    text-align: center;
+}
+
+.grid-item img{
+    width: 100%;
+
+}
+.grid-item p{
+    background-color: lightgreen;
+    padding: 5px;
+}
+
 

@@ -21,14 +21,77 @@
 </head>
 
 <body>
-    <section id="gallery">
-        <a href="#"><img src="images/lightning.jpg" alt="Lightning"></a>Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-        <a href=""><img src="images/clouds.jpg" alt="Clouds and Blue Sky"></a>Contrary to popular belief, Lorem Ipsum is not simply random text.
-        <a href="#"><img src="images/rain.jpg" alt="Rainy Day"></a>Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC.
-        <a href="#"><img src="images/rainbow.jpg" alt="Rainbow over Field"></a> The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested.
-        <a href="#"><img src="images/snow.jpg" alt="Snow"></a> It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.
-        <a href="#"><img src="images/stormy%20sunset.jpg" alt="Stormy Sunset"></a> Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy.
-    </section>
+    <header>
+        <img src="images/sun.jpeg" alt="The site logo" width="100" height="100">
+        <h1>Your Weather Forecast</h1>
+        <div class="subheading">Your weather-Your way</div>
+    </header>
+
+    <!-- site navigation use placeholder references -->
+    <nav>
+        <button onclick="toggleNavMenu()">&#9776;</button>
+        <ul id="primaryNav" class="hide">
+            <li><a href="#">Home</a></li>
+            <li class="active"><a href="franklin-7.html">Franklin</a></li>
+            <li><a href="#">Greenville</a></li>
+            <li><a href="#">Springfield</a></li>
+            <li><a href="stormcenter.html">Storm Center</a></li>
+            <li><a href="gallery-7.html">Gallery</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <div class="grid-container">
+            <figure class="grid-item">
+                <img src="images/lightning.jpg" alt="Lightning">
+                <figcaption>Lightning</figcaption>
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+            </figure>
+
+            <figure class="grid-item">
+                <img src="images/clouds.jpg" alt="Clouds and Blue Sky">
+                <figcaption>Clouds and Blue Sky</figcaption>
+                <p>Contrary to popular belief, Lorem Ipsum is not simply random text.</p>
+            </figure>
+
+            <figure class="grid-item">
+                <img src="images/rain.jpg" alt="Rainy Day">
+                <figcaption>Rainy Day</figcaption>
+                <p>Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC.</p>
+            </figure>
+
+            <figure class="grid-item">
+                <img src="images/rainbow.jpg" alt="Rainbow over Field">
+                <figcaption>Rainbow over Field</figcaption>
+                <p>The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested.</p>
+            </figure>
+
+            <figure class="grid-item">
+                <img src="images/snow.jpg" alt="Snow">
+                <figcaption>Snow</figcaption>
+                <p> It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
+            </figure>
+
+            <figure class="grid-item">
+                <img src="images/stormy%20sunset.jpg" alt="Stormy Sunset">
+                <figcaption>Stormy Sunset</figcaption>
+                <p>Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy.</p>
+            </figure>
+
+        </div>
+    </main>
+
+    <footer>
+        <aside>
+            Contact information placeholder
+        </aside>
+        <p class="footer-bar">&copy;2018 All Rights Reserved | Your Weather Forecast | <span id="currentdate"></span>
+        </p>
+    </footer>
+
+    <script src="scripts/currentdate.js"></script>
+    <script src="scripts/hamburger.js"></script>
+
 </body>
 
 </html>

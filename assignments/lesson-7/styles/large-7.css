@@ -17,12 +17,18 @@
     article p.town-article img {
         width: 29.333%;
     }
-    #gallery img {
-        grid-column-start: 1;
-        grid-column-end: 3;
+    
+    figure img {
+        grid-row-start: 1;
+        grid-row-end: 3;
+    }
+
+    figure img:hover {
+        box-shadow: 5px 5px 10px gray;
     }
     
-    #gallery img:hover {box-shadow: 5px 5px 10px gray;}
-    
-
+    .grid-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
 }

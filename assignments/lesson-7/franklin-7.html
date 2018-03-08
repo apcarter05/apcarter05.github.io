@@ -12,11 +12,11 @@
     <!-- Google API font reference -->
     <link href="styles/normalize.css" rel="stylesheet">
     <!-- normalize useragent/browser defaults -->
-    <link href="styles/main-8.css" rel="stylesheet">
+    <link href="styles/main-7.css" rel="stylesheet">
     <!-- default styles - small/phone views -->
-    <link href="styles/medium-8.css" rel="stylesheet">
+    <link href="styles/medium-7.css" rel="stylesheet">
     <!-- medium/tablet views -->
-    <link href="styles/large-8.css" rel="stylesheet">
+    <link href="styles/large-7.css" rel="stylesheet">
     <!-- large/wide/desktop views -->
 </head>
 
@@ -49,8 +49,8 @@
         <section>
             <h3>Weather Summary</h3>
             <div class="highlow">
-                <p>High: 99</p>
-                <p>Low: 79</p>
+                <p>High: <span id="highT">99</span>&deg;</p>
+                <p>Low: <span id="lowT">79</span>&deg;</p>
             </div>
             <div class="current">
                 Sunny
@@ -59,8 +59,9 @@
                 </picture>
             </div>
             <div class="conditions">
-                <p>Precipitation:</p>
-                <p>Wind Speed:</p>
+                <p>Precipitation: 0%</p>
+                <p>Wind Speed: <span id="speed">20</span> km/h</p>
+                 <p>Wind Chill: <span id="wind-chill"></span></p>
             </div>
         </section>
 
