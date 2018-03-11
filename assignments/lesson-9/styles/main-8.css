@@ -1,0 +1,221 @@
+/* This main css file contains the default rules and is geared toward the small/phone view */
+
+* {
+    box-sizing: border-box;
+}
+
+/* This wildcard applies to all elements ensuring a box layout model */
+
+body {
+    font-size: 16px;
+    /* Declare the base font-family - from google font api or other */
+}
+
+header,
+nav,
+main,
+footer {
+    margin: 15px 25px;
+}
+
+header {}
+
+header,
+h1 {
+    color: teal;
+    font-family: sans-serif;
+    text-align: center;
+}
+
+h2 {
+    color: teal;
+    font-family: sans-serif;
+    font-size: 1.75em;
+}
+
+header img {}
+
+header .subheading {
+    color: dimgrey;
+    font-family: 'Merriweather', serif;
+    text-align: center;
+}
+
+nav {
+    background-color: teal;
+    font-family: 'Merriweather', serif;
+}
+
+nav button {
+    margin: .2rem 2%;
+    background-color: transparent;
+    border: none;
+    font-size: 1.6rem;
+    color: white;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {}
+
+nav ul li a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: .8rem 2%;
+    text-decoration: none;
+    color: white;
+    border-top: 1px solid rgba(0, 0, 0, 0.3);
+}
+
+nav ul li.active a {
+    background-color: #555;
+    color: white;
+}
+
+nav ul li a:hover {
+    background-color: white;
+    color: teal;
+}
+
+nav ul.hide {
+    display: none;
+}
+
+main {}
+
+main h2 {
+    font-family: sans-serif;
+    color: teal;
+}
+main h3 {
+    font-family: sans-serif;
+    color: dimgrey;
+}
+
+main figure {
+    margin: 0 0 .2rem 2%;
+    width: 96%;
+}
+
+main figure img {
+    width: 100%;
+    height: 180px;
+}
+
+picture img {
+    width: 120px;
+}
+
+section {}
+
+
+.forecast {
+    display: none;
+}
+
+article p.town-article img {
+    /* This structure refers to img elements that are the posterity of paragraph elements within artcle elements */
+    /* fill the page in the small/phone view */
+    display: flex;
+    width: 350px;
+    margin: 10px;
+}
+
+footer {}
+
+footer aside {}
+
+footer > p {}
+
+/* This structure refers to p elements that are direct children of the footer element */
+
+/* Other Class Selectors */
+
+form#reportstorm {
+    margin: 1em 3%;
+    padding-top: 1em;
+}
+
+fieldset {
+    background-color: lightblue;
+    border-radius: 1.1em;
+    margin: 2em 0;
+    border: grey solid 1px;
+}
+
+legend {
+    color: teal;
+    margin-left: 1em;
+    padding: .5em;
+    border: teal solid 1px;
+    background-color: floralwhite;
+    border-radius: .5em;
+    font-size: 1.3em
+}
+
+label {
+    display: block;
+    margin: .1.5em;
+}
+
+label span {
+    display: block;
+    font-size: 1.1em;
+    color: teal;
+    padding-top: 1em;
+    padding-bottom: .15em;
+}
+datalist#stormtype {
+    font-family: sans-serif;
+    font-size: 12px;
+}
+
+
+input.button {
+    -webkit-appearance: none;
+    color: floralwhite;
+    border: solid 1px grey;
+    border-radius: .5em;
+    width: 15%;
+    margin: .5em 0;
+    font-size: 1.4em;
+    padding: .4em;
+    background: teal;
+    box-shadow: 4px 4px 15px grey;
+}
+textarea {
+    border: solid 1px grey;
+    border-radius: .5em;
+}
+
+.grid-container{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 10px;
+    background-color: skyblue;
+    padding: 10px;
+}
+
+.grid-item {
+    background-color:aliceblue;
+    border: 1px solid black;
+    padding: 5px;
+    text-align: center;
+}
+
+.grid-item img{
+    width: 100%;
+
+}
+.grid-item p{
+    background-color: lightgreen;
+    padding: 5px;
+}
+
+
+
