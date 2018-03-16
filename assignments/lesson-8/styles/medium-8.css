@@ -9,7 +9,8 @@
 
     header {}
 
-    header, h1 {
+    header,
+    h1 {
         font-size: 40px;
         margin-top: -2.5em;
     }
@@ -60,17 +61,29 @@
         display: block;
     }
 
-    /* responsive images */
-    main figure img {
-        width: 340px;
-        height: 220px;
+    article img.town-article {
+        float: left;
+        width: 50%;
+        margin: 10px;
     }
     
+    footer {
+        clear: both;
+    }
+
+    /* responsive images */
+    main figure img {
+        float: left;
+        width: 340px;
+        height: 220px;
+        padding: 10px;
+    }
+
     .info {
         max-width: 30em;
         align-items: center;
     }
-    
+
     .grid-container {
         display: grid;
         grid-template-columns: 1fr 1fr;
