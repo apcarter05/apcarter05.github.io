@@ -52,6 +52,16 @@
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
     }
-    
+    #towns {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    article #weatherstory {
+        display: flex;
+        flex-direction: column;
+        
+    }
+    article img#weatherimg {
+        display: grid;
+    }
 
 }

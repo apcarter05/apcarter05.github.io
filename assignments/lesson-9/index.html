@@ -42,59 +42,26 @@
     </nav>
 
     <main>
-        <section>
-            <h3>Weather Story</h3>
-            <p class="story">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
-            <figure>
-                <img src="images/stormy%20sunset.jpg" alt="stormy sunset">
-            </figure>
+        <article class="weatherstory">
+            <h2>Breaking News!</h2>
+            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+            <img class="weatherimg" src="images/stormy%20sunset.jpg" alt="stormy sunset">
+        </article>
+
+        <section id="towns">
+            <div>
+                <img id="townimg" src="images/franklin-small.jpg" alt="Franklin">
+                <span id="Franklin"></span>
+            </div>
+            <div>
+                <img id="townimg" src="images/snow.jpg" alt="Greenville">
+                <span id="Greenville"></span>
+            </div>
+            <div>
+                <img id="townimg" src="images/rainbow.jpg" alt="Springfield">
+                <span id="Springfield"></span>
+            </div>
         </section>
-        <section>
-        
-        </section>
-        <script>
-            var section = document.querySelector('section');
-
-            var requestURL = 'https://byui-cit230.github.io/weather/data/towndata.json';
-            var request = new XMLHttpRequest();
-            request.open('GET', requestURL);
-            request.responseType = 'json';
-            request.send();
-            request.onload = function() {
-                var towns = request.response;
-                showTowns(towns);
-            }
-
-
-            function showTowns(jsonObj) {
-                var myH1 = document.createElement('h1');
-                myH1.textcontent = jsonObj['towns'];
-                section.appendChild(myH1);
-
-                var towns = jsonObj['towns'];
-                for (var i = 0; i < towns.length; i++) {
-                    var myArticle = document.createElement('article');
-                    var myH2 = document.createElement('h2');
-                    var myPara1 = document.createElement('p');
-                    var myPara2 = document.createElement('p');
-                    var myPara3 = document.createElement('p');
-
-                    if (towns[i].name == "Franklin" || towns[i].name == "Springfield" || towns[i].name == "Greenville")
-                        myH2.textContent = towns[i].name;
-                    myPara1.textContent = towns[i].motto;
-                    myPara2.textContent = towns[i].yearFounded;
-                    myPara3.textContent = towns[i].currentPopulation;
-
-                    myArticle.appendChild(myH2);
-                    myArticle.appendChild(myPara1);
-                    myArticle.appendChild(myPara2);
-                    myArticle.appendChild(myPara3);
-
-                    section.appendChild(myArticle);
-                }
-            }
-        </script>
-
     </main>
 
     <footer>
@@ -107,7 +74,8 @@
 
     <script src="scripts/currentdate.js"></script>
     <script src="scripts/hamburger.js"></script>
-
+    <script src="scripts/towns.js"></script>
+    
 </body>
 
 </html>
