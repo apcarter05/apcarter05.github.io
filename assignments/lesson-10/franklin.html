@@ -46,63 +46,65 @@
         <figure>
             <img src="images/franklin-small.jpg" alt="Franklin">
         </figure>
-        <section>
-            <h3>Weather Summary</h3>
-            <div class="highlow">
-                <p>High: <span id="highT">99</span>&deg;</p>
-                <p>Low: <span id="lowT">79</span>&deg;</p>
-            </div>
-            <div class="current">
-                Sunny
-                <picture>
-                    <img id="weatherIcon" src="">
-                </picture>
-            </div>
-            <div class="conditions">
-                <p>Current Temp: <span id="temp"></span>&deg;F</p>
-                <p>Wind Speed: <span id="speed"></span>mph</p>
-                 <p>Wind Chill: <span id="wind-chill"></span>&deg;F</p>
-            </div>
-        </section>
+            <section>
+                <h3>Weather Summary</h3>
+                <div class="highlow">
+                    <p>Current Temp: <span id="temp"></span>&deg;F</p>
+                    <p>High: <span id="highT"></span>&deg;</p>
+                    <p>Low: <span id="lowT"></span>&deg;</p>
+                </div>
+                <div class="current">
+                    Sunny
+                    <picture>
+                        <img id="weatherIcon" src="">
+                    </picture>
+                </div>
+                <div class="conditions">
+                    <p>Precipitation: <span id="precipitation"></span>"</p>
+                    <p>Wind Speed: <span id="speed"></span>mph</p>
+                    <p>Wind Chill: <span id="windChill"></span>&deg;F</p>
+                </div>
+            </section>
 
-        <section class="forecast">
-            <h3>10 Day Forecast</h3>
-            <table>
-                <thead>
-                    <tr>
-                        <th>Day 1</th>
-                        <th>Day 2</th>
-                        <th>Day 3</th>
-                        <th>Day 4</th>
-                        <th>Day 5</th>
-                        <th>Day 6</th>
-                        <th>Day 7</th>
-                        <th>Day 8</th>
-                        <th>Day 9</th>
-                        <th>Day 10</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>89&deg;F</td>
-                        <td>87&deg;F</td>
-                        <td>78&deg;F</td>
-                        <td>75&deg;F</td>
-                        <td>72&deg;F</td>
-                        <td>72&deg;F</td>
-                        <td>79&deg;F</td>
-                        <td>83&deg;F</td>
-                        <td>85&deg;F</td>
-                        <td>89&deg;F</td>
-                    </tr>
-                </tbody>
-            </table>
-        </section>
+            <section class="forecast">
+                <h3>10 Day Forecast</h3>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Day 1</th>
+                            <th>Day 2</th>
+                            <th>Day 3</th>
+                            <th>Day 4</th>
+                            <th>Day 5</th>
+                            <th>Day 6</th>
+                            <th>Day 7</th>
+                            <th>Day 8</th>
+                            <th>Day 9</th>
+                            <th>Day 10</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>89&deg;F</td>
+                            <td>87&deg;F</td>
+                            <td>78&deg;F</td>
+                            <td>75&deg;F</td>
+                            <td>72&deg;F</td>
+                            <td>72&deg;F</td>
+                            <td>79&deg;F</td>
+                            <td>83&deg;F</td>
+                            <td>85&deg;F</td>
+                            <td>89&deg;F</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+        
 
         <article>
             <h3>Franklin Breaks Record</h3>
             <p class="town-article">
-                <img src="images/town.jpeg" alt="street view"> The great weather we have been having in Franklin looks to continue on through next week. 
+                <img src="images/town.jpeg" alt="street view"> The great weather we have been having in Franklin looks to continue on through next week.
             </p>
         </article>
 
@@ -113,11 +115,12 @@
             4875 N. Reserve St. Franklin, MN | 123.333.5555
         </aside>
         <p class="footer-bar">&copy;2018 All Rights Reserved | Your Weather Forecast | <span id="dayofWeek"></span>
-        <script src="scripts/currentdate.js"></script></p>
+            <script src="scripts/currentdate.js"></script>
+        </p>
     </footer>
 
     <script src="scripts/hamburger.js"></script>
-    <script type="text/javascript" src="scripts/weather.js"></script>
+    <script src="scripts/weather.js"></script>
 
 </body>
 
