@@ -242,13 +242,12 @@ textarea {
     display: grid;
     grid-template-columns: 1fr;
     grid-gap: 10px;
-    background-color: skyblue;
     padding: 10px;
 }
 
 .grid-item {
-    background-color: aliceblue;
     border: 1px solid black;
+    border-radius: .5em;
     padding: 5px;
     text-align: center;
 }
@@ -259,13 +258,13 @@ textarea {
 }
 
 .grid-item p {
-    background-color: lightgreen;
     padding: 5px;
 }
 
 #towns {
     display: grid;
     grid-template-columns: 1fr;
+    grid-gap: .25rem;
 }
 
 #townimg {
@@ -278,7 +277,6 @@ textarea {
     border-radius: .5em;
     display: flex;
     flex-direction: column;
-    grid-template-columns: 1fr;
     margin: 5px;
 }
 

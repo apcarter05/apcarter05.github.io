@@ -112,8 +112,6 @@
     #townimg {
         display: inline-grid;
     }
-    article img#weatherimg {
-        max-width: 50%;
-    }
+    
 }
 
