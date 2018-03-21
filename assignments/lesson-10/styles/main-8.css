@@ -113,11 +113,6 @@ main p img {
     width: 50%;
     margin-top: -100px;
     padding: 10px;
-
-}
-
-#weatherIcon {
-    width: 4em;
 }
 
 main figure img {
@@ -128,6 +123,7 @@ main figure img {
 picture img {
     width: 120px;
 }
+
 
 .forecast {
     display: none;
@@ -149,7 +145,7 @@ article p.town-article img {
 }
 
 article p.town-article {
-    text-align: center;
+    text-align: justify;
     font-family: 'Merriweather', sans-serif;
     font-size: 12px;
     padding: 5px;
@@ -262,7 +258,7 @@ textarea {
 
 #townimg {
     width: 100%;
-    padding: 25px;
+    padding: 5px;
 }
 
 #towns div {
@@ -274,6 +270,7 @@ textarea {
 }
 
 #towns div span {
-    margin: 55px;
+    margin: 5px;
     font-size: 12px;
+    text-align: center;
 }

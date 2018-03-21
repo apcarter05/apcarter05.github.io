@@ -42,26 +42,27 @@
     </nav>
 
     <main>
-        <h2>The City of Greenville</h2>
+        <h2>The City of <span id="place"></span></h2>
         <figure>
             <img src="images/franklin-small.jpg" alt="Franklin">
         </figure>
         <section>
             <h3>Weather Summary</h3>
             <div class="highlow">
-                <p>High: <span id="highT">99</span>&deg;</p>
-                <p>Low: <span id="lowT">79</span>&deg;</p>
+                <p>Current Temp: <span id="temp"></span>&deg;F</p>
+                <p>Feels like: <span id="feels"></span>&deg;F</p>
             </div>
             <div class="current">
-                Sunny
+                <p id="current">Sunny</p>
                 <picture>
-                    <img src="images/sunny.jpg" alt="sunny">
+                    <img id="img" src="">
                 </picture>
+                <p id="forecast">Forecast: </p>
             </div>
             <div class="conditions">
-                <p>Precipitation: 0%</p>
-                <p>Wind Speed: <span id="speed">20</span> km/h</p>
-                 <p>Wind Chill: <span id="wind-chill"></span></p>
+                <p>Precipitation: <span id="precipitation"></span>"</p>
+                <p>Wind Speed: <span id="speed"></span>mph</p>
+                <p>Wind Chill: <span id="windChill"></span>&deg;F</p>
             </div>
         </section>
 
@@ -113,13 +114,14 @@
             4875 N. Reserve St. Franklin, MN | 123.333.5555
         </aside>
         <p class="footer-bar">&copy;2018 All Rights Reserved | Your Weather Forecast | <span id="dayofWeek"></span>
-        <script src="scripts/currentdate.js"></script></p>
+            <script src="scripts/currentdate.js"></script>
+        </p>
     </footer>
 
     <script src="scripts/hamburger.js"></script>
-    
+    <script src="scripts/g_weather.js"></script>
     <script src="scripts/windchill.js"></script>
-    
+
 
 </body>
 

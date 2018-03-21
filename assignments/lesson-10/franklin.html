@@ -42,69 +42,70 @@
     </nav>
 
     <main>
-        <h2>The City of Franklin</h2>
+        <h2>The City of <span id="place"></span></h2>
         <figure>
             <img src="images/franklin-small.jpg" alt="Franklin">
         </figure>
-            <section>
-                <h3>Weather Summary</h3>
-                <div class="highlow">
-                    <p>Current Temp: <span id="temp"></span>&deg;F</p>
-                    <p>High: <span id="highT"></span>&deg;</p>
-                    <p>Low: <span id="lowT"></span>&deg;</p>
-                </div>
-                <div class="current">
-                    Sunny
-                    <picture>
-                        <img id="weatherIcon" src="">
-                    </picture>
-                </div>
-                <div class="conditions">
-                    <p>Precipitation: <span id="precipitation"></span>"</p>
-                    <p>Wind Speed: <span id="speed"></span>mph</p>
-                    <p>Wind Chill: <span id="windChill"></span>&deg;F</p>
-                </div>
-            </section>
+        <section>
+            <h3>Weather Summary</h3>
+            <div class="highlow">
+                <p>Current Temp: <span id="temp"></span>&deg;F</p>
+                <p>Feels like: <span id="feels"></span>&deg;F</p>
+            </div>
+            <div class="current">
+                <p id="current">Sunny</p>
+                <picture>
+                    <img id="img" src="">
+                </picture>
+                <p id="forecast">Forecast: </p>
+            </div>
+            <div class="conditions">
+                <p>Precipitation: <span id="precipitation"></span>"</p>
+                <p>Wind Speed: <span id="speed"></span>mph</p>
+                <p>Wind Chill: <span id="windChill"></span>&deg;F</p>
+            </div>
+        </section>
+        <section class="forecast">
+            <h3>10 Day Forecast</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Day 1</th>
+                        <th>Day 2</th>
+                        <th>Day 3</th>
+                        <th>Day 4</th>
+                        <th>Day 5</th>
+                        <th>Day 6</th>
+                        <th>Day 7</th>
+                        <th>Day 8</th>
+                        <th>Day 9</th>
+                        <th>Day 10</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>89&deg;F</td>
+                        <td>87&deg;F</td>
+                        <td>78&deg;F</td>
+                        <td>75&deg;F</td>
+                        <td>72&deg;F</td>
+                        <td>72&deg;F</td>
+                        <td>79&deg;F</td>
+                        <td>83&deg;F</td>
+                        <td>85&deg;F</td>
+                        <td>89&deg;F</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
 
-            <section class="forecast">
-                <h3>10 Day Forecast</h3>
-                <table>
-                    <thead>
-                        <tr>
-                            <th>Day 1</th>
-                            <th>Day 2</th>
-                            <th>Day 3</th>
-                            <th>Day 4</th>
-                            <th>Day 5</th>
-                            <th>Day 6</th>
-                            <th>Day 7</th>
-                            <th>Day 8</th>
-                            <th>Day 9</th>
-                            <th>Day 10</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>89&deg;F</td>
-                            <td>87&deg;F</td>
-                            <td>78&deg;F</td>
-                            <td>75&deg;F</td>
-                            <td>72&deg;F</td>
-                            <td>72&deg;F</td>
-                            <td>79&deg;F</td>
-                            <td>83&deg;F</td>
-                            <td>85&deg;F</td>
-                            <td>89&deg;F</td>
-                        </tr>
-                    </tbody>
-                </table>
-            </section>
-        
+
 
         <article>
             <h3>Franklin Breaks Record</h3>
             <p class="town-article">
-                <img src="images/town.jpeg" alt="street view"> The great weather we have been having in Franklin looks to continue on through next week.
+                <img src="images/town.jpeg" alt="street view"> On January 31, millions of stargazers around the globe will witness what promises to be a spectacular total lunar eclipse. While the celestial event is always special, what makes Wednesday’s particularly noteworthy is that it coincides with both a blue moon and a supermoon. Hence the moniker “super blue blood moon.” According to NASA, the lunar trifecta is the first of its kind in 35 years and will not occur again until 2037. <br>                
+                For those in need of a little refresher, blue moon is the name given to the second full moon in a single calendar month. A supermoon, on the other hand, occurs when the moon reaches its closest distance to Earth in its orbit and therefore, appears a little bigger and brighter than usual. According to NASA, the satellite will be just 223,068 miles away from our planet (compared to the average distance of 238,855 miles), a few hours before the eclipse, on January 30.
             </p>
         </article>
 
@@ -121,6 +122,7 @@
 
     <script src="scripts/hamburger.js"></script>
     <script src="scripts/weather.js"></script>
+
 
 </body>
 
