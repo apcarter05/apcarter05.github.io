@@ -37,11 +37,6 @@
 
     nav ul li a {}
 
-    main figure img {
-        width: 1200px;
-        height: 250px;
-    }
-
     article {
         width: 75%;
         margin: 0 175px;

@@ -103,11 +103,6 @@
     }
 
     /* responsive images */
-    main figure img {
-        width: 340px;
-        height: 220px;
-    }
-
     .info {
         max-width: 30em;
         align-items: center;
