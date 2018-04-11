@@ -1,0 +1,82 @@
+ <!doctype html>
+<html lang="en-us">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>The Mountain Spoke</title>
+    <meta name="author" content="April Carter">
+    <meta name="description" content="Term Website Project">
+    <!-- external style references in the proper cascading order -->
+    <link href="https://fonts.googleapis.com/css?family=Merriweather" rel="stylesheet">
+    <!-- Google API font reference -->
+    <link href="styles/normalize.css" rel="stylesheet">
+    <!-- normalize useragent/browser defaults -->
+    <link href="styles/main.css" rel="stylesheet">
+    <!-- default styles - small/phone views -->
+    <link href="styles/medium.css" rel="stylesheet">
+    <!-- medium/tablet views -->
+    <link href="styles/large.css" rel="stylesheet">
+    <!-- large/wide/desktop views -->
+</head>
+
+<body>
+
+    <header>
+        <img src="images/logo.png" alt="The site logo">
+        <h1>The Mountain Spoke</h1>
+        <div class="subheading">Montana's Adventure Gateway</div>
+    </header>
+
+    <!-- site navigation use placeholder references -->
+    <nav>
+        <button onclick="toggleNavMenu()">&#9776;</button>
+        <ul id="primaryNav" class="hide">
+            <li class="active"><a href="homepage.html">Home</a></li>
+            <li><a href="tours.html">Adventure Tours</a></li>
+            <li><a href="events.html">Events</a></li>
+            <li><a href="sales.html">Sales</a></li>
+            <li><a href="services.html">Service</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <article>
+            <p class="town-article">
+                <img src="images/adventure-bicycle-bike-161172.jpg" alt="Mountain Biking">
+            </p>
+        </article>
+
+        <section id="bozeman">
+            <div>
+                <a href="events.html"><img id="bozemanimg" src="images/continentaldivide.jpg" alt="Continental Divide">
+                </a>
+                <h4>Cycle the Continental Divide, the world's largest off-pavement route.</h4>
+            </div>
+            <div>
+                <a href="sales.html"><img id="bozemanimg" src="images/gravitybike.jpg" alt="Mountain Bike">
+                </a>
+                <h4>We offer a wide variety of bicycles for sale. Click to find your perfect bike today!</h4>
+            </div>
+            <div>
+                <a href="tours.html"><img id="bozemanimg" src="images/adventure-calm-clouds-414171.jpg" alt="Available Tours">
+                </a>
+                <h4>Want to explore Bozeman Montana? Take advantage of our local bicycle tours. Varying from easy to difficult, we have the tour that is perfect for you.</h4>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <aside>
+            3950 Valley Commons Drive Bozeman, MT | <a href="references.html">References</a>
+        </aside>
+        <p class="footer-bar">&copy;2018 All Rights Reserved | The Mountain Spoke | <span id="dayofWeek"></span>
+        </p>
+    </footer>
+    <script src="scripts/currentdate.js"></script>
+    <script src="scripts/hamburger.js"></script>
+
+</body>
+
+</html>

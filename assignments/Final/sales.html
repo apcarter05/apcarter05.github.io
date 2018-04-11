@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="en-us">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>The Mountain Spoke</title>
+    <meta name="author" content="April Carter">
+    <meta name="description" content="Term Website Assignment">
+    <!-- external style references in the proper cascading order -->
+    <link href="https://fonts.googleapis.com/css?family=Merriweather" rel="stylesheet">
+    <!-- Google API font reference -->
+    <link href="styles/normalize.css" rel="stylesheet">
+    <!-- normalize useragent/browser defaults -->
+    <link href="styles/main.css" rel="stylesheet">
+    <!-- default styles - small/phone views -->
+    <link href="styles/medium.css" rel="stylesheet">
+    <!-- medium/tablet views -->
+    <link href="styles/large.css" rel="stylesheet">
+    <!-- large/wide/desktop views -->
+</head>
+
+<body>
+    <header>
+        <img src="images/logo.png" alt="The site logo">
+        <h1>The Mountain Spoke</h1>
+        <div class="subheading">Montana's Adventure Gateway</div>
+    </header>
+
+    <!-- site navigation use placeholder references -->
+    <nav>
+        <button onclick="toggleNavMenu()">&#9776;</button>
+        <ul id="primaryNav" class="hide">
+            <li><a href="homepage.html">Home</a></li>
+            <li><a href="tours.html">Adventure Tours</a></li>
+            <li><a href="events.html">Events</a></li>
+            <li class="active"><a href="sales.html">Sales</a></li>
+            <li><a href="services.html">Service</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <div class="grid-container">
+            <figure class="grid-item">
+                <img src="images/bike.jpg" alt="Gravity HD Comp Mountain Bike">
+                <figcaption>Matte Grey 27.5 Gravity HD Comp Mountain Bike</figcaption>
+                <h3>Features:</h3>
+                <p>
+                    <li>Long Travel Forks</li>
+                    <li>Double Wall Rims</li>
+                    <li>Shimano Hydraulic Disk Brake</li>
+                    <li>Light/Strong Aluminum</li>
+                </p>
+                <h4>List Price: $899</h4>
+            </figure>
+
+            <figure class="grid-item">
+                <img src="images/gravitybike.jpg" alt="Gravity FSX 1.0 Full Suspension Bike">
+                <figcaption>Yellow Gravity FSX 1.0 Mountian Bike</figcaption>
+                <h3>Features:</h3>
+                <p>
+                    <li>Shimano Acera 24 Speed</li>
+                    <li>Full Suspension Mountain Bike</li>
+                    <li>Advanced Suspension Fork</li>
+                    <li>Shimano Acera, Disc Brakes</li>
+                    <li>Adjustable Rear Coil-Over Shock</li>
+                </p>
+                <h4>List Price: $995</h4>
+            </figure>
+
+            <figure class="grid-item">
+                <img src="images/roadbike.jpg" alt="Windsor Wellington 1.0 Road Bike">
+                <figcaption>British Green Windsor Wellington 1.0 Road Bike</figcaption>
+                <h3>Features:</h3>
+                <p>
+                    <li>Shimano 14 Speed Road Bike</li>
+                    <li>Convenient Shimano Stem Shifters</li>
+                    <li>Multishaped Engineered Aluminum</li>
+                    <li>Frame Tubes, DuraForte Fork</li>
+                </p>
+                <h4>List Price: $699</h4>
+            </figure>
+
+            <figure class="grid-item">
+                <img src="images/motobecane.jpg" alt="Motobecane 350DS">
+                <figcaption>Lava Red Motobecane 350DS Mountain Bike</figcaption>
+                <h3>Features:</h3>
+                <p>
+                    <li>Shimano 24 speed</li>
+                    <li>Full Suspension Mountain Bike</li>
+                    <li>Powerful Disk Brakes</li>
+                    <li>Lockout Long Travel Fork</li>
+                    <li>Coil-Over Rear Shock</li>
+                    <li>MTB Tires</li>
+                </p>
+                <h4>List Price: $899</h4>
+            </figure>
+
+        </div>
+    </main>
+
+    <footer>
+        <aside>
+            3950 Valley Commons Drive Bozeman, MT | <a href="references.html">References</a>
+        </aside>
+        <p class="footer-bar">&copy;2018 All Rights Reserved | The Mountain Spoke | <span id="dayofWeek"></span>
+        </p>
+    </footer>
+
+    <script src="scripts/currentdate.js"></script>
+    <script src="scripts/hamburger.js"></script>
+
+</body>
+
+</html>

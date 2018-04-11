@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="en-us">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>The Mountain Spoke</title>
+    <meta name="author" content="April Carter">
+    <meta name="description" content="Term Website Assignment">
+    <!-- external style references in the proper cascading order -->
+    <link href="https://fonts.googleapis.com/css?family=Merriweather" rel="stylesheet">
+    <!-- Google API font reference -->
+    <link href="styles/normalize.css" rel="stylesheet">
+    <!-- normalize useragent/browser defaults -->
+    <link href="styles/main.css" rel="stylesheet">
+    <!-- default styles - small/phone views -->
+    <link href="styles/medium.css" rel="stylesheet">
+    <!-- medium/tablet views -->
+    <link href="styles/large.css" rel="stylesheet">
+    <!-- large/wide/desktop views -->
+</head>
+
+<body>
+    <header>
+        <img src="images/logo.png" alt="The site logo">
+        <h1>The Mountain Spoke</h1>
+        <div class="subheading">Montana's Adventure Gateway</div>
+    </header>
+
+    <!-- site navigation use placeholder references -->
+    <nav>
+        <button onclick="toggleNavMenu()">&#9776;</button>
+        <ul id="primaryNav" class="hide">
+            <li><a href="homepage.html">Home</a></li>
+            <li class="active"><a href="tours.html">Adventure Tours</a></li>
+            <li><a href="events.html">Events</a></li>
+            <li><a href="sales.html">Sales</a></li>
+            <li><a href="services.html">Service</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <article>
+            <h2>Tour Bozeman Montana!</h2>
+            <img class="lake" src="images/dawn-dusk-lake-355423.jpg" alt="Lake">
+            <h4>There are many opportunities to enjoy mountain biking or touring on Bozeman, Montana's city streets or the many single-track mountain biking trails in the area.</h4>
+            <p>For a change of pace and a fun way to get to know the area, try exploring Bozeman, Montana and the surrounding area on a bike. The town is bike friendly with bike lanes and routes set out through the residential and commercial areas. If you want to leave the city, you may elect to arrange for a mountain bike tour of the adjacent foothills and mountain area.</p>
+        </article>
+
+        <article>
+            <h4>Emerald Lake/Heather Lake</h4>
+            <li>Trail Location: South or Bozeman down Hyalite Canyon Road, about a mile past the waterfall.</li>
+            <li>Trail Type: 100% single track mountain bike trail.</li>
+            <li>Distance: 9 total miles</li>
+            <li>Skill Level: Advanced Skills</li>
+
+            <h4>West Brider/Foothills Road</h4>
+            <li>Trail Location: Found on the north edge of Bozeman along the western flank of the Bridger Range.</li>
+            <li>Trail Type: Mountain Bike</li>
+            <li>Distance: 13.7 total miles</li>
+            <li>Skill Level: Easy to Moderate</li>
+
+            <h4>Sourdough Ridge Loop</h4>
+            <li>Trail Location: Located on the east edge of Bozeman's city limits.</li>
+            <li>Trail Type: 1.6 miles on paved road; 1.9 miles on singltrack or gravel path.</li>
+            <li>Distance: 3.5 total miles</li>
+            <li>Skill Level: Mostly easy, with two short but strenuous climbs</li>
+
+            <h4>Sourdough Creek Nature Trails</h4>
+            <li>Trail Location: Located on the edge of Bozeman, running south from Kagy Boulevard near the Valley View Gold Club to Goldstein Road.</li>
+            <li>Trail Type: An easy off-road family ride near town along a beautiful stream, with good opportunities to see wildlife, especially birds.</li>
+            <li>Distance: 4.3 total miles</li>
+            <li>Skill Level: Easy</li>
+
+            <h4>Guided Tours available upon request.</h4>
+
+            <img class="lake" src="images/adventure-calm-clouds-414171.jpg" alt="Reflection">
+        </article>
+    </main>
+
+    <footer>
+        <aside>
+            3950 Valley Commons Drive Bozeman, MT | <a href="references.html">References</a>
+        </aside>
+        <p class="footer-bar">&copy;2018 All Rights Reserved | The Mountain Spoke | <span id="dayofWeek"></span>
+        </p>
+    </footer>
+
+    <script src="scripts/currentdate.js"></script>
+    <script src="scripts/hamburger.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,149 @@
+<!doctype html>
+<html lang="en-us">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>The Mountain Spoke</title>
+    <meta name="author" content="April Carter">
+    <meta name="description" content="Term Website Assignment">
+    <!-- external style references in the proper cascading order -->
+    <link href="https://fonts.googleapis.com/css?family=Merriweather" rel="stylesheet">
+    <!-- Google API font reference -->
+    <link href="styles/normalize.css" rel="stylesheet">
+    <!-- normalize useragent/browser defaults -->
+    <link href="styles/main.css" rel="stylesheet">
+    <!-- default styles - small/phone views -->
+    <link href="styles/medium.css" rel="stylesheet">
+    <!-- medium/tablet views -->
+    <link href="styles/large.css" rel="stylesheet">
+    <!-- large/wide/desktop views -->
+</head>
+
+<body>
+    <header>
+        <img src="images/logo.png" alt="The site logo">
+        <h1>The Mountain Spoke</h1>
+        <div class="subheading">Montana's Adventure Gateway</div>
+    </header>
+
+    <!-- site navigation use placeholder references -->
+    <nav>
+        <button onclick="toggleNavMenu()">&#9776;</button>
+        <ul id="primaryNav" class="hide">
+            <li><a href="homepage.html">Home</a></li>
+            <li><a href="tours.html">Adventure Tours</a></li>
+            <li><a href="events.html">Events</a></li>
+            <li><a href="sales.html">Sales</a></li>
+            <li class="active"><a href="services.html">Service</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <h3>Bicycle Service & Repair</h3>
+
+        <h2>Labor Prices</h2>
+        <div class="grid-container">
+            <figure class="grid-item">
+                <h3>Basic Tune Up</h3>
+                <h3>$49.99</h3>
+                <p>Re-adjusting your brakes and shifters (assuming your wheels are already true), air your tires, lube chain, and tighten and straighten components on bike for saftey</p>
+            </figure>
+
+            <figure class="grid-item">
+                <h3>Complete Tune Up</h3>
+                <h3>$69.99</h3>
+                <p>Everything included in your basic tune up plus: true wheels, lubing cables and adjusting the bearings in your headset, hubs, and bottom bracket.<br> (includes installation of up to 3 standard parts)
+                </p>
+            </figure>
+
+            <figure class="grid-item">
+                <h3>Deluxe Tune Up</h3>
+                <h3>$99.99</h3>
+                <p>Everything in your complete tune up plus a professional drivetrain cleaning.<br> (includes installation of up to 3 standard parts)
+                </p>
+            </figure>
+
+            <figure class="grid-item">
+                <h3>Full Overhaul</h3>
+                <h3>$199.99</h3>
+                <p>A complete dissassembly down to the frame and rebuild including packing of the bearings and installation of standard parts.
+                </p>
+            </figure>
+
+            <figure class="grid-item">
+                <h3>Expedited Service</h3>
+                <h3>$25</h3>
+                <p>Need your bike for a big race on Friday? Had an emergency pop up? Not a problem! We can have your bike for you in time for your event. Just give us 48 hours notice and with a small fee to cover extra labor you can skip ahead of the line just in time for race day.</p>
+            </figure>
+        </div>
+        
+        <div>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Standard Parts</th>
+                        <th>Price</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Install tire or tube off bike</td>
+                        <td>$8</td>
+                    </tr>
+                    <tr>
+                        <td>Install tire or tube on bike</td>
+                        <td>$10</td>
+                    </tr>
+                    <tr>
+                        <td>Install tubeless tire</td>
+                        <td>$20</td>
+                    </tr>
+                    <tr>
+                        <td>Install brakeset non-hydraulic</td>
+                        <td>$15</td>
+                    </tr>
+                    <tr>
+                        <td>Install rak or fenders</td>
+                        <td>$10</td>
+                    </tr>
+                    <tr>
+                        <td>Install brakeset hydraulic</td>
+                        <td>$25</td>
+                    </tr>
+                    <tr>
+                        <td>Overhaul headset</td>
+                        <td>$15</td>
+                    </tr>
+                    <tr>
+                        <td>Overhaul hub front</td>
+                        <td>$15</td>
+                    </tr>
+                    <tr>
+                        <td>Overhaul hub rear</td>
+                        <td>$25</td>
+                    </tr>
+                    <tr>
+                        <td>Assemble shipped bike</td>
+                        <td>$79.99</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </main>
+
+            <footer>
+                <aside>
+                    3950 Valley Commons Drive Bozeman, MT | <a href="references.html">References</a>
+                </aside>
+                <p class="footer-bar">&copy;2018 All Rights Reserved | The Mountain Spoke | <span id="dayofWeek"></span>
+                </p>
+            </footer>
+
+            <script src="scripts/currentdate.js"></script>
+            <script src="scripts/hamburger.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en-us">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>The Mountain Spoke</title>
+    <meta name="author" content="April Carter">
+    <meta name="description" content="Term Website Assignment">
+    <!-- external style references in the proper cascading order -->
+    <link href="https://fonts.googleapis.com/css?family=Merriweather" rel="stylesheet">
+    <!-- Google API font reference -->
+    <link href="styles/normalize.css" rel="stylesheet">
+    <!-- normalize useragent/browser defaults -->
+    <link href="styles/main.css" rel="stylesheet">
+    <!-- default styles - small/phone views -->
+    <link href="styles/medium.css" rel="stylesheet">
+    <!-- medium/tablet views -->
+    <link href="styles/large.css" rel="stylesheet">
+    <!-- large/wide/desktop views -->
+</head>
+
+<body>
+
+    <header>
+        <img src="images/logo.png" alt="The site logo">
+        <h1>The Mountain Spoke</h1>
+        <div class="subheading">Montana's Adventure Gateway</div>
+    </header>
+
+    <!-- site navigation use placeholder references -->
+    <nav>
+        <button onclick="toggleNavMenu()">&#9776;</button>
+        <ul id="primaryNav" class="hide">
+            <li><a href="homepage.html">Home</a></li>
+            <li><a href="tours.html">Adventure Tours</a></li>
+            <li><a href="events.html">Events</a></li>
+            <li><a href="sales.html">Sales</a></li>
+            <li><a href="services.html">Service</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <form id="registration">
+
+        <h2>Cycle the Continental Divide</h2>
+        <h3>Please fill out the following form to register</h3>
+        <div class="info">
+            <fieldset>
+                <legend><span>Personal Information</span></legend>
+                <label><span>Full Name:</span><input name="fullname" type="text" value="" placeholder="Full Name" pattern="[a-zA-Z ]{5,}" title="minimum of five letters" required></label>
+                <label><span>Email:</span><input name="email" type="email" value="" placeholder="user@youremail.com" required></label>
+                <label><span>Phone Number:</span><input name="phone" type="tel" value="" placeholder="8885551234" pattern="[0-9]{10,20}" required></label>
+                <label><span>Home State/Country:</span><input name="state" type="text" placeholder="Montana" required></label>
+            </fieldset>
+
+            <fieldset>
+                <legend><span>Special Accomodations & Comments</span></legend>
+                <textarea rows="10" cols="50"></textarea>
+            </fieldset>
+        </div>
+        <input type="submit" value="Submit" class="button" formaction="thankyou.html">
+
+    </form>
+
+    <footer>
+         <aside>
+            3950 Valley Commons Drive Bozeman, MT | <a href="references.html">References</a>
+        </aside>
+        <p class="footer-bar">&copy;2018 All Rights Reserved | The Mountain Spoke | <span id="dayofWeek"></span>
+        </p>
+    </footer>
+
+    <script src="scripts/currentdate.js"></script>
+    <script src="scripts/hamburger.js"></script>
+
+</body>
+
+</html>

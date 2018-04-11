@@ -1,0 +1,74 @@
+@media only screen and (min-width: 64em) {
+    /* Only CSS rules that need to be changed to meet the layout needs from medium to large/wide go in here */
+    header,
+    nav,
+    main,
+    footer {
+        max-width: 150em;
+    }
+    
+    header {
+        padding-bottom: 3em;
+    }
+    
+     header,
+    h1 {
+        margin-left: 200px;
+    }
+
+    header img {
+        width: 8em;
+        margin-top: -2em;
+    }
+    
+    h1{
+        margin-top: -3em;
+        margin-left: 6em;
+    }
+    
+    header .subheading {
+        margin-left: 9.5em;
+        margin-top: -20px;
+    }
+
+    nav {
+         margin: -155px 0 -2em 45em;
+    }
+
+    nav ul li a {}
+
+    main figure img {
+        width: 1200px;
+        height: 250px;
+    }
+
+    article {
+        width: 75%;
+        margin: 0 175px;
+        align-content: center;
+    }
+    
+    article p.town-article img {
+        width: 100%;
+    }
+    
+    figure img {
+        grid-row-start: 1;
+        grid-row-end: 3;
+    }
+
+    figure img:hover {
+        box-shadow: 5px 5px 10px gray;
+    }
+
+    .grid-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    
+    #bozeman {
+        grid-template-columns: 1fr 1fr 1fr;
+        min-width: 64em;
+    }
+
+}

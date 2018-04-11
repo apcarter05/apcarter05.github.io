@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="en-us">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>The Mountain Spoke</title>
+    <meta name="author" content="April Carter">
+    <meta name="description" content="Term Website Assignment">
+    <!-- external style references in the proper cascading order -->
+    <link href="https://fonts.googleapis.com/css?family=Merriweather" rel="stylesheet">
+    <!-- Google API font reference -->
+    <link href="styles/normalize.css" rel="stylesheet">
+    <!-- normalize useragent/browser defaults -->
+    <link href="styles/main.css" rel="stylesheet">
+    <!-- default styles - small/phone views -->
+    <link href="styles/medium.css" rel="stylesheet">
+    <!-- medium/tablet views -->
+    <link href="styles/large.css" rel="stylesheet">
+    <!-- large/wide/desktop views -->
+</head>
+
+<body>
+    <header>
+        <img src="images/logo.png" alt="The site logo">
+        <h1>The Mountain Spoke</h1>
+        <div class="subheading">Montana's Adventure Gateway</div>
+    </header>
+
+    <!-- site navigation use placeholder references -->
+    <nav>
+        <button onclick="toggleNavMenu()">&#9776;</button>
+        <ul id="primaryNav" class="hide">
+            <li><a href="homepage.html">Home</a></li>
+            <li><a href="tours.html">Adventure Tours</a></li>
+            <li class="active"><a href="events.html">Events</a></li>
+            <li><a href="sales.html">Sales</a></li>
+            <li><a href="services.html">Service</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <article>
+            <h2>Cycle the Continental Divide</h2>
+            <p class="town-article">
+                <img src="images/continentaldivide.jpg" alt="Continental Divide"></p>
+            <h4>Ride the longest off-pavement route in the world.</h4>
+            <p>The Great Divide Mountain Bike Route is The Mountain Spoke's premier off-pavement cycling route, crisscrossing the Continental Divide north to south. This route is defined by the word "remote." Its remoteness equates with spectacular terrain and scenery. The entire route is basically dirt-road and mountain-pass riding every day. In total, it has over 200,000 feet of elevation gain. Roughly 80% of it is composed of county, Forest Service (USFS), and Bureau of Land Management (BLM) dirt and gravel roads. The remainder is made up of four-wheel-drive tracks and singletrack trails (10%), and paved roads (10%).</p>
+        </article>
+
+        
+        <article>
+            <section class="divide">
+            <h4>Great Divide Mountain Bike Route Banff, AB to Antelope Wells, NM (2768.4 mi.)</h4>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Route</th>
+                        <th>Mileage</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>CANADA - Banff, AB to Roosville, MT</td>
+                        <td>256.6 miles</td>
+                    </tr>
+                    <tr>
+                        <td>Roosville, MT to Polaris, MT</td>
+                        <td>542.3 miles</td>
+                    </tr>
+                    <tr>
+                        <td>Polaris, MT to South Pass City, WY</td>
+                        <td>510.4 miles</td>
+                    </tr>
+                    <tr>
+                        <td>South Pass City, WY to Silverthorne, CO</td>
+                        <td>403.9 miles</td>
+                    </tr>
+                    <tr>
+                        <td>Silverthorne, CO to Platoro, CO</td>
+                        <td>316.5 miles</td>
+                    </tr>
+                    <tr>
+                        <td>Platoro, CO to Pie Town, NM</td>
+                        <td>430.1 miles</td>
+                    </tr>
+                    <tr>
+                        <td>Pie Town, NM to Antelope Wells, NM</td>
+                        <td>307.8 miles</td>
+                    </tr>
+                </tbody>
+            </table>
+            </section>
+            <p>With the exception of the Great Basin in Wyoming, you will be either gaining elevation, or descending, for the entire route. The elevations are lower in Montana — building up to the highest passes in Colorado and then tapering back off in New Mexico. However, some of the toughest climbs are in Montana and New Mexico because of the steepness and the poor road quality. And in New Mexico you'll be carrying extra food and water for the serviceless stretches.<br>
+                <p>This route can be ridden anytime from early summer to mid-fall. Be aware that snow can occur at any time along the route. If it is a heavy snow year, high-elevation roads in the north may not be open until late June or early July.<br>
+
+                    <p>We discourage you from attempting to ride this route solo; in fact, a minimum group size of three is strongly recommended. If a rider is debilitated in the backcountry, you will want to have at least one person to stay with the injured/sick rider, and another to go for help. A growing number of backcountry travelers are carrying cellular phones for such emergency situations – but be aware that reception is still very spotty along much of the route.<br>
+
+                        <p>Because June is typically a wet month in the northern Rockies, and often a cold one at the higher elevations, we recommend that you do not attempt to ride prior to late June or early July. High-country snowpack may prevent certain portions from being passable until then, anyway. Concerning the other end of the cycling season, plan on being off the route by mid-October at the latest. Regardless of when you strike out or how long you intend to be there, pack along raingear and cold-weather clothing. Snow or cold rain is possible any day of the year at some of the elevations encountered, and hypothermia is an ever-present possibility.</p>
+                        <a href="registrationform.html">CLICK HERE TO REGISTER!!</a>
+        </article>
+    </main>
+
+    <footer>
+        <aside>
+            3950 Valley Commons Drive Bozeman, MT | <a href="references.html">References</a>
+        </aside>
+        <p class="footer-bar">&copy;2018 All Rights Reserved | The Mountain Spoke | <span id="dayofWeek"></span>
+        </p>
+    </footer>
+
+    <script src="scripts/currentdate.js"></script>
+    <script src="scripts/hamburger.js"></script>
+
+</body>
+
+</html>
