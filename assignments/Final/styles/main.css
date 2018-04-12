@@ -52,7 +52,7 @@ header .subheading {
 }
 
 nav {
-    background-color: #142514;   
+    background-color: #142514;  
 }
 
 nav button {
@@ -68,10 +68,12 @@ nav ul {
     margin: 0;
 }
 
-nav ul li {}
+nav ul li {
+    text-align: right;
+}
 
 nav ul li a {
-    align-content: right;
+    text-align: right;
     text-decoration: none;
     color: white;
     border-top: 1px solid rgba(0, 0, 0, 0.3);
@@ -111,7 +113,6 @@ main p {
 }
 
 main p img {
-    float: right;
     width: 50%;
     margin-top: -100px;
     padding: 10px;

@@ -39,9 +39,9 @@
 
     nav {
         display: flex;
-        flex-direction: row;
-        align-content: right;
+        flex-flow: row nowrap;
         margin-top: -8em;
+        width: 75%;
     }
 
     nav button {
@@ -61,6 +61,7 @@
         display: inline-flex;
         flex-flow: column wrap;
     }
+    
     nav ul li a {
         border: none;
         color: white;
